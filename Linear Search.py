@@ -1,0 +1,16 @@
+def linear_search(values,search_for):
+    search_at=0
+    search_res=False
+
+ # Match the value with each data element
+   while search_at< len(values) and search_res is False:
+         if values[search_at] == search_for:
+                search_res = True
+            else:
+                search_at = search_at + 1
+
+        return search_res
+
+1 = [1,2,4,6,2,5]
+print(linear_search(1,5))
+print(linear_search(1,4))   
